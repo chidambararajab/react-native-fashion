@@ -16,7 +16,11 @@ const AuthenticationStack = createNativeStackNavigator();
 
 const AuthenticationNavigation = () => {
   return (
-    <AuthenticationStack.Navigator>
+    <AuthenticationStack.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}
+    >
       <AuthenticationStack.Screen name="Onboarding" component={Onboarding} />
     </AuthenticationStack.Navigator>
   );
